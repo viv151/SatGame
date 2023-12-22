@@ -4,7 +4,6 @@ import {useState} from 'react';
 import { QuizData, images1 } from './Data/QuizData';
 import QuizResult from './QuizResult';
 
-//console.log(QuizData.length);
 function App() {
  
 const [image, setNewImage] = useState(images1[0]);
@@ -14,11 +13,6 @@ const [score, setScore] = useState(0);
 const[randomNum1, setRandomNum] = useState(0);
 const [showResult, setShowResult] = useState(false);
 
-// const handleNextOption=() =>{
-//   const nextImage=image + 1;
-//   setNewImage(images1[nextImage]);
-// }
-
 const handleAnswerOption=(isCorrect)=>{
   if(isCorrect){
     setScore( score + 1 );
@@ -27,7 +21,6 @@ const handleAnswerOption=(isCorrect)=>{
   setClicked(true)
 };
 
-// let randomNum1 = 0;
 console.log(randomNum1);
 console.log(score);
 console.log(QuizData.length);
@@ -62,7 +55,7 @@ const handlePlayAgain =() =>{
           <img id='map' src={image}></img>
         </div>
         <div className='questiion-count'>
-      <span> Image {image+1} of {QuizData.length}</span>
+      <span> Image {randomNum1+1} of {QuizData.length}</span>
     </div>
     <div className='answer-section'>
       {QuizData[randomNum1].options.map((ans,i) => {
@@ -82,11 +75,8 @@ const handlePlayAgain =() =>{
       <button onClick={handlePlayAgain}>Quit</button>
       <button disabled={!clicked} onClick={imgNum}> Next </button>
     </div>
-    <div className='ques'> simran loves vivek's dick </div>
-    {/* <div className='option1 option'></div>
-    <div className='option2 option'></div>
-    <div className='option3 option'></div>
-    <div className='option4 option'></div> */}
+    <div className='ques'> Guess the following Satellite Image </div>
+   
     <button type='button' class='btn btn-outline-primary' onClick={imgNum }> start </button>
       </>
       )}
