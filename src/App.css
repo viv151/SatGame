@@ -36,3 +36,138 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  width: 100%;
+  height: 100%; 
+  position: relative; 
+  background: #1A1646; 
+  border-top-left-radius: 50px; 
+  border-top-right-radius: 50px; 
+  overflow: hidden;
+
+}
+.home{
+
+  position: absolute;
+}
+#map{
+  width: 600px; 
+  height: 475px; 
+  left: 860px; 
+  top: 155px; 
+  position: absolute; 
+  background: #D9D9D9; 
+  border-radius: 10px
+}
+
+/* .option{
+  width: 650px;
+  height: 65px;
+   left: 127px;
+   position: absolute;
+       background: rgba(217, 217, 217, 0.65);
+       border-radius: 20px
+}
+.option1{
+ 
+  top: 351px;       
+}
+
+.option2{
+  top: 445px;
+}
+
+.option3{
+  top: 539px;
+}
+
+.option4{
+  top: 633px;
+} */
+
+.btn{
+  position: absolute;
+left: 50%;
+transform: translateX(-50%);
+color: #444;
+background: none;
+border: none;
+font-family: inherit;
+font-size: 1.8rem;
+text-transform: uppercase;
+cursor: pointer;
+font-weight: 400;
+transition: all 0.2s;
+
+background-color: white;
+background-color: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(10px);
+
+padding: 0.7rem 2.5rem;
+border-radius: 50rem;
+box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.answer-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 50%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #2f922f;
+}
+
+.incorrect{
+  background-color: maroon;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.actions button {
+  background-color: #7cc6fe;
+
+  justify-content: space-between;
+}
+.actions button:hover {
+  background-color: #234668;
+  color: white;
+}
+
+.ques{
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+}
