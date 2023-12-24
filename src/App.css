@@ -1,5 +1,15 @@
+
 .App {
   text-align: center;
+  background-color: #252d4a;
+  width: 500px;
+  min-height: 250px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .App-logo {
@@ -39,27 +49,40 @@
 
 
 body{
-  width: 100%;
+  /* width: 100%;
   height: 100%; 
   position: relative; 
   background: #1A1646; 
+  
+  overflow: hidden; */
+  background-image: url('C:\Users\Simra\OneDrive\Pictures\background\home.png') ; 
+  background-color: #7cc6fe;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
   border-top-left-radius: 50px; 
   border-top-right-radius: 50px; 
-  overflow: hidden;
-
+  padding: 60PX;
+  padding-bottom: 60px;
 }
 .home{
 
   position: absolute;
 }
 #map{
-  width: 600px; 
+  width: 730px; 
   height: 475px; 
   left: 860px; 
   top: 155px; 
   position: absolute; 
   background: #D9D9D9; 
-  border-radius: 10px
+  border-radius: 10px;
+  box-shadow: #252d4a;
+  margin-right: 200px;
+  right: 500px;
+  left: 700px;
 }
 
 /* .option{
@@ -88,7 +111,16 @@ body{
 } */
 
 .btn{
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 100px; 
+  height: 40px; 
+  background: linear-gradient(109deg, #B6116B 0%, rgba(118.96, 17.93, 109.78, 0.54) 48%, rgba(116.83, 17.96, 109.88, 0.52) 48%, rgba(46, 19, 113, 0) 100%); 
+  border-radius: 20px; 
+  border: 2px #B6116B solid;
+  
+  /* position: absolute;
 left: 50%;
 transform: translateX(-50%);
 color: #444;
@@ -107,7 +139,7 @@ backdrop-filter: blur(10px);
 
 padding: 0.7rem 2.5rem;
 border-radius: 50rem;
-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1); */
 }
 
 .answer-section {
@@ -118,7 +150,7 @@ box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 }
 
 button {
-  width: 50%;
+  width: 150%;
   font-size: 16px;
   color: #ffffff;
   background-color: #252d4a;
@@ -129,6 +161,7 @@ button {
   align-items: center;
   border: 5px solid #234668;
   cursor: pointer;
+  box-shadow: #252d4a;
 }
 
 .correct {
@@ -170,4 +203,21 @@ button svg {
   color: #ffffff;
   font-size: 20px;
   text-align: left;
+  top: 500px;
+}
+
+.question-count{
+  margin-bottom: 20px
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.score-section{
+  width: 400px;
+}
+
+.question-section{
+  top: 100px;
 }

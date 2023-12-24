@@ -10,8 +10,9 @@ const [image, setNewImage] = useState(images1[0]);
 const [CorrectAns, setCorrectAns] = useState(0);
 const [clicked, setClicked] = useState(false);
 const [score, setScore] = useState(0);
-const[randomNum1, setRandomNum] = useState(0);
+const [randomNum1, setRandomNum] = useState(0);
 const [showResult, setShowResult] = useState(false);
+
 
 const handleAnswerOption=(isCorrect)=>{
   if(isCorrect){
@@ -54,7 +55,7 @@ const handlePlayAgain =() =>{
           <h5>Score: {score}</h5>
           <img id='map' src={image}></img>
         </div>
-        <div className='questiion-count'>
+        <div className='question-count'>
       <span> Image {randomNum1+1} of {QuizData.length}</span>
     </div>
     <div className='answer-section'>
@@ -77,7 +78,7 @@ const handlePlayAgain =() =>{
     </div>
     <div className='ques'> Guess the following Satellite Image </div>
    
-    <button type='button' class='btn btn-outline-primary' onClick={imgNum }> start </button>
+    <button type='button' class='btn btn-outline-primary' onClick={imgNum }> Skip </button>
       </>
       )}
     
