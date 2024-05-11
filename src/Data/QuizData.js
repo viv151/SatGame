@@ -270,16 +270,6 @@ export const QuizData = [
       {answerText: 'Jaisalmer', isCorrect: false},
       {answerText: 'Jaipur', isCorrect: false},
       ],
-  },
-
-  { //udaipur
-    question : images1[22],
-    options : [ 
-      {answerText: 'Riya', isCorrect: true},
-      {answerText: 'Shivali', isCorrect: false},
-      {answerText: 'Ritu', isCorrect: false},
-      {answerText: 'Nandani', isCorrect: false},
-      ],
-  },
+  }
    
 ]

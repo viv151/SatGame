@@ -1,0 +1,140 @@
+body {
+  background-image: url(https://res.cloudinary.com/drpslc2ip/image/upload/v1703511164/gamepage_gbmfhb.jpg);
+  background-size: cover;
+  background-color: #7cc6fe;
+  display: flex;
+  /* justify-content: left; */
+  /* align-items: center; */
+  color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.gameActive {
+  
+  text-align: center;
+  background-color: #252d4a;
+  width: 500px;
+  min-height: 250px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  /* display: flex;
+  justify-content: space-evenly; */
+  margin-left: 53vw;
+  margin-top: 10vh;
+}
+
+#map {
+  width: 570px;
+  height: 400px;
+  top: 20vh;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 12px;
+  box-shadow: #252d4a;
+  left: 4vw;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(109deg, #B6116B 0%, rgba(118.96, 17.93, 109.78, 0.54) 48%, rgba(116.83, 17.96, 109.88, 0.52) 48%, rgba(46, 19, 113, 0) 100%);
+  border-radius: 20px;
+  border: 2px #B6116B solid;
+}
+
+.quit{
+ display: flex;
+ margin-left: 70%;
+}
+
+.answer-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 150%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  box-shadow: #252d4a;
+}
+
+.correct {
+  background-color: #2f922f;
+}
+
+.incorrect {
+  background-color: maroon;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.actions button {
+  background-color: #7cc6fe;
+  width: 200px;
+  justify-content: center;
+}
+
+.actions button:hover {
+  background-color: #234668;
+  color: white;
+}
+
+.ques {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+.question-count {
+  margin-bottom: 20px
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.score-section {
+  width: 400px;
+}
+
+.question-section {
+  text-align: left;
+}
